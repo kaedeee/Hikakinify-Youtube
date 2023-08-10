@@ -1,14 +1,14 @@
 {
     "manifest_version": 2,
-    "name": "サムネスキン: 全てのサムネにヒカキン登場",
+    "name": "サムネスキン☆ヒカキンが全てのサムネに降臨",
     "version": "1.0",
     "icons": {
-        "16": "icon16.png",
-        "32": "icon32.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     },
-    "description": "【無料】YouTube全てのサムネイルにヒカキンが登場する神Firefox拡張機能",
+    "description": "YouTubeのサムネイルがヒカキンだらけになる☆神すぎる拡張機能☆",
     "permissions": [
         "https://www.youtube.com/*"
     ],
