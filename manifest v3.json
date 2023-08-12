@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "サムネスキン☆ヒカキンが全てのサムネに降臨",
+    "name": "サムネスキン😎ヒカキンが全てのサムネに降臨！",
     "version": "1.0",
     "icons": {
       "16": "icons/icon16.png",
@@ -8,7 +8,7 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "description": "YouTubeのサムネイルがヒカキンだらけになる☆神すぎる拡張機能☆",
+    "description": "【神】YouTubeのサムネがヒカキンだらけになるChrome拡張機能が遂に登場！",
     "host_permissions": [
         "https://www.youtube.com/*"
     ],
