@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "サムネスキン😎ヒカキンが全てのサムネに降臨！",
-    "version": "1.0",
+    "version": "1.1",
     "icons": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
