@@ -1,14 +1,54 @@
-# ThumbneilS-Kin:
+# Hajime-Skin
 
-Enhance your browsing experience with Hikakinifier. Is your browser experience boring? Are you having trouble finding engaging click-baity videos? Fear no more. This extension adds famous youtuber Hikakin to every thumbnail.
+## 0. Fetch the latest version
 
-Instructions on how to port and modify the extension can be found [here](https://github.com/MagicJinn/MrBeastify-Youtube/issues/16).
+```bash
+git fetch upstream
+git merge upstream/main
+```
 
-[Firefox](http://addons.mozilla.org/en-GB/firefox/addon/youtube-mrbeastify/) | [Chrome](http://chrome.google.com/webstore/detail/youtube-mrbeastify/dbmaeobgdodeimjdjnkipbfhgeldnmeb) | [Edge](http://microsoftedge.microsoft.com/addons/detail/youtube-mrbeastify/jabaaojkmmljhmnheeihppepcmiadhll0)
+## 1. 📝 Rewrite meta data
 
-Compatible with all browsers (Firefox and Chromium based).
+### ⚙️ **Update the `manifests.json`**
 
-Notes:
+- [ ] **Rename** the extension.
+- [ ] Update the **version number**.
+  - `manifest.json`
+  - `manifest v3.json`
 
-- This extension was inspired by [Unnecessary Inventions](http://www.youtube.com/@UnnecessaryInventions) and his [website](http://www.mrbeastify.com/).
-- This extension is unofficial and not affiliated with Hikakin or YouTube.
+## 2. 🎨 Overwrite Images
+
+## 3. 🛠️ Build
+
+### 🧩 Chrome
+
+Create another `.zip` file with the following contents:
+
+```plaintext
+icons, images, manifest v3.json, mrbeasify.js
+```
+
+### 🦊 Firefox
+
+Create a `.zip` file with the following contents:
+
+```plaintext
+icons, images, manifest.json, mrbeasify.js
+```
+
+This is your Firefox add-on.
+
+> **⚠️ CAUTION**
+> Rename `manifest v3.json` to `manifest.json`.
+
+This is your Chrome extension.
+
+## 4. ☁️ Upload
+
+### 🧩 Chrome
+
+Go to the [Chrome Web Store](https://chrome.google.com/webstore/devconsole/3930a7e0-bab7-49ab-ad9c-e8f834f32649).
+
+### 🦊 Firefox
+
+Go to the [Firefox developer hub](https://addons.mozilla.org/developers/addons).
