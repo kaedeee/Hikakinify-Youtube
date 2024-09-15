@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        width: 300px;
+
+        background-color: #fff;
+        color: #333;
+      }
+
+      .popup-header {
+        display: flex;
+        padding-bottom: 0px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .logo {
+        width: 38px;
+        height: 38px;
+        padding-right: 5px;
+      }
+      .title {
+        font-size: 12px;
+        opacity: 0.75;
+      }
+
+      .section-title {
+        padding-bottom: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #585858;
+      }
+
+      .fancy-checkbox {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+      }
+
+      .hidden-checkbox {
+        position: absolute;
+        opacity: 0;
+      }
+
+      .checkmark {
+        position: absolute;
+        top: -2px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      .checkbox-text {
+        vertical-align: bottom;
+      }
+
+      .hidden-checkbox:checked + .checkmark:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 6px;
+        top: 2px;
+        width: 6px;
+        height: 12px;
+        border: solid #333;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+
+      .options-table {
+        width: 100%;
+      }
+
+      .options-table td {
+        padding: 2px;
+      }
+
+      .options-table th {
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .option-label {
+        color: #585858;
+        font-weight: normal;
+      }
+
+      .option-label-strong {
+        color: #000;
+        font-weight: bold;
+      }
+
+      .option-icon {
+        width: 20px;
+        text-align: center;
+        padding-right: 5px;
+      }
+
+      .popup-footer {
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 20px;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .official_site {
+        text-decoration: none;
+      }
+
+      .social-icons {
+        width: 100px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .x-icon {
+        font-size: 20px;
+        cursor: pointer;
+        color: #4a4a4a;
+      }
+
+      .yt-icon {
+        font-size: 20px;
+        cursor: pointer;
+        color: #4a4a4a;
+      }
+
+      .link-icon {
+        font-size: 20px;
+        cursor: pointer;
+        color: #4a4a4a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="popup-container">
+      <header class="popup-header">
+        <img src="./icon.png" alt="Extension Logo" class="logo" />
+        <a id="extension-title" dir="ltr" class="title">TITLE</a>
+      </header>
+
+      <p class="section-title">Options</p>
+
+      <table class="options-table">
+        <tr>
+          <th>
+            <label for="name" class="option-label-strong">
+              <i class="fa-solid fa-power-off option-icon"></i> Extension
+              Enabled</label
+            >
+          </th>
+          <td>
+            <label class="fancy-checkbox">
+              <input
+                type="checkbox"
+                id="disableExtension"
+                class="hidden-checkbox"
+              />
+              <span class="checkmark"></span>
+            </label>
+          </td>
+        </tr>
+      </table>
+
+      <br />
+
+      <table class="options-table">
+        <tr>
+          <th>
+            <label for="name" class="option-label">
+              <i class="fa-solid fa-ghost option-icon"></i> Appear Chance
+              (%)</label
+            >
+          </th>
+          <td>
+            <input type="number" id="appearChance" min="0" max="100" step="5" />
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="name" class="option-label">
+              <i class="fa-solid fa-repeat option-icon"></i> Flip Chance
+              (%)</label
+            >
+          </th>
+          <td>
+            <input type="number" id="flipChance" min="0" max="100" step="5" />
+          </td>
+        </tr>
+      </table>
+
+      <br />
+
+      <img
+        src="https://media1.tenor.com/m/rZ_8ihC6W7kAAAAC/ヒカキン.gif"
+        width="100%"
+      />
+
+      <footer class="popup-footer">
+        <a
+          href="https://games.kaedeee.com"
+          target="_blank"
+          class="official_site"
+        >
+          Made by KAEDE Games with <i class="fa-solid fa-heart"></i>
+        </a>
+
+        <span class="social-icons">
+          <a
+            href="https://x.com/kaedeee_you"
+            target="_blank"
+            class="x-icon"
+            style="text-decoration: none"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="http://www.youtube.com/channel/UCiPA2GfglPYiAZRuDDbbVhQ?sub_confirmation=1"
+            target="_blank"
+            class="yt-icon"
+            style="text-decoration: none"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a
+            href="http://linktr.ee/_chrome"
+            target="_blank"
+            class="link-icon"
+            style="text-decoration: none"
+          >
+            <i class="fa-solid fa-link"></i>
+          </a>
+        </span>
+      </footer>
+    </div>
+
+    <script src="settings.js"></script>
+  </body>
+</html>
